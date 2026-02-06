@@ -3,17 +3,11 @@ import { Dropdown } from "./coponents/dropdown/Dropdown";
 import { MdFilterList } from "react-icons/md";
 
 export default function App() {
-    const list = [
-        "Option 1 is the longest as it can be",
-        "Option 2",
-        "Option 3",
-        "option 4",
-        "option 5",
-        "option 6",
-    ];
+    const list = ["Venter", "Søkte", "Ringte", "Svarte"];
+
     return (
         <main>
-            <Dropdown triger={<MdFilterList />} variants="">
+            <Dropdown trigger={<MdFilterList />} variants="md">
                 {list}
             </Dropdown>
         </main>
